@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_white.png" translatesAutoresizingMaskIntoConstraints="NO" id="JGh-B5-Ogu">
+                                <rect key="frame" x="60" y="51" width="201" height="130"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="130" id="5fp-Pf-7WW"/>
+                                    <constraint firstAttribute="width" constant="201" id="Xyu-jZ-zj3"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GeekNavi" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9HS-nh-fZk">
+                                <rect key="frame" x="20" y="189" width="280" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="Rfe-oC-mgz"/>
+                                    <constraint firstAttribute="width" constant="280" id="b09-PM-XVq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="34"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.086274509799999996" green="0.61176470589999998" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="JGh-B5-Ogu" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="topMargin" constant="51" id="9ai-bs-Tbb"/>
+                            <constraint firstItem="JGh-B5-Ogu" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerXWithinMargins" id="9rW-Xe-oFP"/>
+                            <constraint firstItem="9HS-nh-fZk" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="XlU-Jx-dOE"/>
+                            <constraint firstItem="9HS-nh-fZk" firstAttribute="top" secondItem="JGh-B5-Ogu" secondAttribute="bottom" constant="8" id="fxk-Pt-wwW"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo_white.png" width="600" height="463"/>
+    </resources>
+</document>
