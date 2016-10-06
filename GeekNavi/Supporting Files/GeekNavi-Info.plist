@@ -17,7 +17,7 @@
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>2.00</string>
+	<string>2.02</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleURLTypes</key>
@@ -30,7 +30,7 @@
 		</dict>
 	</array>
 	<key>CFBundleVersion</key>
-	<string>1.00</string>
+	<string>1.01</string>
 	<key>FacebookAppID</key>
 	<string>${fbID}</string>
 	<key>FacebookDisplayName</key>
@@ -69,6 +69,10 @@
 	<string>We need your location in order to best track your position and send it to the driver.</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>We need your location in order to best track your position and send it to the driver.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>We need access to your photos in order to change your profile picture.</string>
+	<key>NSSiriUsageDescription</key>
+	<string>Ride Booking information will be sent to @{appDisplayName}</string>
 	<key>UIBackgroundModes</key>
 	<array>
 		<string>fetch</string>

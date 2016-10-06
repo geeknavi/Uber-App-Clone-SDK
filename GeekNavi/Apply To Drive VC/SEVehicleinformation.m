@@ -1,5 +1,5 @@
 #import "SEVehicleinformation.h"
-#import "GeekPhotoLibrary.h"
+#import <GeekNavi/GeekPhotoLibrary.h>
 
 static const CGFloat KEYBOARD_ANIMATION_DURATION = 0.3;
 static const CGFloat MINIMUM_SCROLL_FRACTION = 0.2;

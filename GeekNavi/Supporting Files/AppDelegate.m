@@ -14,10 +14,9 @@
 #import "SEPaymentViewController.h"
 #import "SEBecomeADriver.h"
 #import "LoginViewController.h"
-#import "GeekGuillotineMenu.h"
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
 #import <FBSDKLoginKit/FBSDKLoginKit.h>
-
+#import <GeekNavi/GeekGuillotineMenu.h>
 
 @interface AppDelegate ()<GeekGuillotineMenuDelegate>
 
@@ -33,6 +32,8 @@
     [GeekNavi setThemeColor:[UIColor colorWithRed:22.0/255.0f green:156.0/255.0f blue:229.0/255.0 alpha:1.0f]];
     
     [GeekNavi setStripePK_Key:@"pk_test_FuLAg7bUqPr0iKuQtS7W7xvB"]; // GeekNavi's Test Key, implement your own if you're not testing solely for demo purposes
+    
+    [GeekNavi setGroupIDIdentifier:@"group.sharingdata.ride"]; // Found under "Capabilities"
     
     /*
      (Optional)

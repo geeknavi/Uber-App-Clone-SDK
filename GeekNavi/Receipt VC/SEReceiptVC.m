@@ -1,6 +1,6 @@
 #import "SEReceiptVC.h"
 #import "Constant.h"
-#import "GeekNaviStarRatingView.h"
+#import <GeekNavi/GeekNaviStarRatingView.h>
 
 static double tipValue = 0.0f;
 

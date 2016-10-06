@@ -3,14 +3,14 @@
 //  Created by GeekNavi on 7/11/16.
 
 #import "SEMainViewController.h"
-#import "GeekMapHelper.h"
 #import "HTHorizontalSelectionList.h"
-#import "GeekWaterView.h"
 #import "DriverRideCompleteViewController.h"
 #import <MessageUI/MessageUI.h>
 #import <AudioToolbox/AudioToolbox.h>
 #import "SEReceiptVC.h"
 #import "SEMoreInfoApplication.h"
+#import <GeekNavi/GeekMapHelper.h>
+#import <GeekNavi/GeekWaterView.h>
 
 static int vehicleType = 0;
 static double totalPrice = 0.0;
@@ -18,7 +18,7 @@ static int currentRideID = 0;
 
 static BOOL driverMode = NO;
 
-@interface SEMainViewController ()<GeekMapHelperDelegate,MKMapViewDelegate,UITextFieldDelegate,HTHorizontalSelectionListDataSource,HTHorizontalSelectionListDelegate,MFMessageComposeViewControllerDelegate,UIAlertViewDelegate>{
+@interface SEMainViewController ()<GeekMapHelperDelegate,GeekWaterViewDelegate,MKMapViewDelegate,UITextFieldDelegate,HTHorizontalSelectionListDataSource,HTHorizontalSelectionListDelegate,MFMessageComposeViewControllerDelegate,UIAlertViewDelegate>{
     __weak IBOutlet UITextField *fromAddressTextField;
     __weak IBOutlet UILabel *fromLabel;
     __weak IBOutlet UIView *fromAddressView;
@@ -265,6 +265,7 @@ static BOOL driverMode = NO;
             [self.view addSubview:bookingTint];
             
             waterview = [[GeekWaterView alloc] initWithFrame:CGRectMake(0, self.view.frame.size.height-225, self.view.frame.size.width, 225)];
+            waterview.delegate = self;
             waterview.watercolor = [UIColor whiteColor];
             // Book Call
             [self.view addSubview:waterview];
@@ -399,8 +400,13 @@ static BOOL driverMode = NO;
     }
 }
 
-
-
+#pragma mark - User cancellation methods (waterview)
+-(void)userPressedCall:(NSString *)phoneNumber{
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"tel:%@",phoneNumber]]];
+}
+-(void)userPressedText:(NSString *)phoneNumber{
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"sms:%@",phoneNumber]]];
+}
 
 /*
  //////////////////////////////////////////////////////////////////////////////////////////////////

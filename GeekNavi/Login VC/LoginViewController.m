@@ -22,16 +22,11 @@
     [super viewDidLoad];
     [self customizeThemeAndButtons];
     
-    
-    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    NSString *storedEmail = [defaults objectForKey:@"vEmail"];
-    NSString *hashKey = [defaults objectForKey:@"vPassword"];
-    
     [FBSDKProfile enableUpdatesOnAccessTokenChange:YES];
     if ([FBSDKAccessToken currentAccessToken]) {
         [self autoLoginFacebook];
-    }else if (storedEmail && hashKey) {
-        [self autoLoginPhoneNumber:storedEmail hashKey:hashKey];
+    }else if ([GeekNavi geekHasAccessToken]) {
+        [self autoLoginPhoneNumber:nil];
     }
 }
 -(void)viewDidDisappear:(BOOL)animated{
@@ -52,7 +47,7 @@
 }
 
 #pragma mark - Auto Login User Methods
--(void)autoLoginPhoneNumber:(NSString *)storedEmail hashKey:(NSString *)hashKey{
+-(void)autoLoginPhoneNumber:(NSString *)storedEmail{
     [logins setHidden:YES];
     
     [GeekNavi loginUserWithEmail:storedEmail block:^(id JSON, WebServiceResult geekResult) {
@@ -91,18 +86,6 @@
              [logins setHidden:NO];
          }
      }];
-}
-
-#pragma mark - Save Details for Auto Login
--(void)saveReturnedEmail:(NSString *)email{
-    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    [defaults setObject:email forKey:@"vEmail"];
-    [defaults synchronize];
-}
--(void)saveReturnedPassword:(NSString *)password{
-    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    [defaults setObject:password forKey:@"vPassword"];
-    [defaults synchronize];
 }
 
 @end

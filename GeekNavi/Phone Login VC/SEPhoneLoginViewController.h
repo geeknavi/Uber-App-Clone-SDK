@@ -8,7 +8,7 @@
 
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
 #import <FBSDKLoginKit/FBSDKLoginKit.h>
-#import "GeekNaviCountryPicker.h"
+#import "GeekNavi/GeekNaviCountryPicker.h"
 
 @interface SEPhoneLoginViewController : UIViewController <FBSDKLoginButtonDelegate,GeekNaviCountryPickerDelegate>
 @end

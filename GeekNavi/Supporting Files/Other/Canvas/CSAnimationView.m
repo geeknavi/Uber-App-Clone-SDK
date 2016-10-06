@@ -11,6 +11,7 @@
 @implementation CSAnimationView
 
 - (void)awakeFromNib {
+    [super awakeFromNib];
     if (self.type && self.duration && ! self.pauseAnimationOnAwake) {
         [self startCanvasAnimation];
     }

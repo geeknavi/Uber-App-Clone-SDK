@@ -1,7 +1,7 @@
 #import "ProfileEditViewController.h"
 #import "Constant.h"
 #import "Canvas.h"
-#import "GeekPhotoLibrary.h"
+#import <GeekNavi/GeekPhotoLibrary.h>
 
 @interface ProfileEditViewController ()<GeekPhotoLibraryDelegate>{
     __weak IBOutlet UITextField *txtFirstName;
@@ -70,8 +70,6 @@
                     showAlertViewWithMessage(NSLocalizedString(@"thank_you_payout_details", nil));
                     paypalemailtextfield.text=@"";
                     setuppaypalpayouttext.text=@"UPDATE PAYPAL PAYOUT";
-                    [[NSUserDefaults standardUserDefaults] setObject:@"PPSaved" forKey:@"Paypaldetails"];
-                    [[NSUserDefaults standardUserDefaults] synchronize];
                 }else{
                     showAlertViewWithMessage(NSLocalizedString(@"general_error", nil));
                 }
@@ -156,10 +154,6 @@
 }
 #pragma mark - Screen Customizations
 -(void)fetchPreviousDetails{
-    if ([[[NSUserDefaults standardUserDefaults] stringForKey:@"Paypaldetails"] isEqualToString:@"PPSaved"]) {
-        setuppaypalpayouttext.text=@"UPDATE PAYPAL PAYOUT";
-    }
-    
     txtFirstName.text=userInformation[@"vFirst"];
     txtLastName.text=userInformation[@"vLast"];
     phonenumber.text=userInformation[@"userPhone"];

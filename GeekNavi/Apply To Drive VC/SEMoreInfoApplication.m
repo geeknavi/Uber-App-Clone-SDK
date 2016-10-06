@@ -7,7 +7,7 @@
 //
 
 #import "SEMoreInfoApplication.h"
-#import "GeekPhotoLibrary.h"
+#import <GeekNavi/GeekPhotoLibrary.h>
 
 
 @interface SEMoreInfoApplication () <GeekPhotoLibraryDelegate>{

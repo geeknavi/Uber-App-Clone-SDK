@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "GeekNaviCountryPicker.h"
+#import <GeekNavi/GeekNaviCountryPicker.h>
 
 @interface SEAddPhoneNumberVC : UIViewController<GeekNaviCountryPickerDelegate>
 

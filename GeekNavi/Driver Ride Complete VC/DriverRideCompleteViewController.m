@@ -7,7 +7,7 @@
 //
 
 #import "DriverRideCompleteViewController.h"
-#import "GeekMapHelper.h"
+#import <GeekNavi/GeekMapHelper.h>
 
 @interface DriverRideCompleteViewController (){
     __weak IBOutlet UIView *mainview;
