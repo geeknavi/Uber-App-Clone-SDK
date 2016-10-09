@@ -7,6 +7,7 @@
 //
 
 #import "IntentHandler.h"
+#import "AppConfiguration.h"
 
 @interface IntentHandler () <INRequestRideIntentHandling>
 
@@ -18,8 +19,8 @@
     // This is the default implementation.  If you want different objects to handle different intents,
     // you can override this and return the handler you want for that particular intent.
     
-    [GeekNavi setGroupIDIdentifier:@"group.sharingdata.ride"];
-    [GeekNavi setGeekNaviAPIKey:@""]; // Your GeekNavi API Key
+    [GeekNavi setGroupIDIdentifier:@"group.sharingdata.ride"]; // Found under "Capabilities" (Required for Siri)
+    [GeekNavi setGeekNaviAPIKey:__GEEK_API_KEY]; // Your GeekNavi API Key
     
     /*
      (Required after Purchase)

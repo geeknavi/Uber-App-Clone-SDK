@@ -434,7 +434,7 @@
 		03AA6B251D48681D00DD78D4 /* close-btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "close-btn.png"; sourceTree = "<group>"; };
 		03AA6B601D48689000DD78D4 /* GeekNavi-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GeekNavi-Info.plist"; sourceTree = "<group>"; };
 		03AA6B621D48691D00DD78D4 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		03AA6B661D486A2700DD78D4 /* pre-plist-setup.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "pre-plist-setup.xcconfig"; path = "GeekNavi/pre-plist-setup.xcconfig"; sourceTree = "<group>"; };
+		03AA6B661D486A2700DD78D4 /* pre-plist-setup.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "pre-plist-setup.xcconfig"; sourceTree = "<group>"; };
 		03BF508E1D8EB29A00106C05 /* siriGeek.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = siriGeek.entitlements; sourceTree = "<group>"; };
 		03BF509A1D8FB17300106C05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Base; path = Base.lproj/AppIntentVocabulary.plist; sourceTree = "<group>"; };
 		03E5F3F41D8E7FA60024E8E8 /* GeekNavi.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GeekNavi.framework; path = "/Users/filipbusic/Desktop/GeekNavi 2.0/iOS/GeekNavi/GeekNavi.framework"; sourceTree = "<absolute>"; };
@@ -445,6 +445,7 @@
 		03EEA2B31D8E2F49001B6013 /* IntentHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IntentHandler.m; sourceTree = "<group>"; };
 		03EEA2B51D8E2F49001B6013 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		03EEA2BB1D8E2F49001B6013 /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
+		03F3738E1DA9E466008CB2BA /* AppConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppConfiguration.h; sourceTree = "<group>"; };
 		03F8D2FC1D48740E003DE4FC /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -478,6 +479,7 @@
 			isa = PBXGroup;
 			children = (
 				03AA6B661D486A2700DD78D4 /* pre-plist-setup.xcconfig */,
+				03F3738E1DA9E466008CB2BA /* AppConfiguration.h */,
 				03AA69CD1D48668E00DD78D4 /* Frameworks */,
 				03EEA2B11D8E2F49001B6013 /* siriGeek */,
 				03AA69A81D4865D900DD78D4 /* GeekNavi */,
@@ -1352,6 +1354,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -1394,6 +1397,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
@@ -1407,7 +1411,7 @@
 			baseConfigurationReference = 03AA6B661D486A2700DD78D4 /* pre-plist-setup.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = GeekNavi/GeekNavi.entitlements;
+				CODE_SIGN_ENTITLEMENTS = GeekNavi.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1416,7 +1420,7 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GeekNavi/Supporting Files/PrefixHeader.pch";
-				INFOPLIST_FILE = "$(SRCROOT)/GeekNavi/Supporting Files/GeekNavi-Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Supporting Files/GeekNavi-Info.plist";
 				INFOPLIST_PREPROCESS = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1435,7 +1439,7 @@
 			baseConfigurationReference = 03AA6B661D486A2700DD78D4 /* pre-plist-setup.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = GeekNavi/GeekNavi.entitlements;
+				CODE_SIGN_ENTITLEMENTS = GeekNavi.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1444,7 +1448,7 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GeekNavi/Supporting Files/PrefixHeader.pch";
-				INFOPLIST_FILE = "$(SRCROOT)/GeekNavi/Supporting Files/GeekNavi-Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Supporting Files/GeekNavi-Info.plist";
 				INFOPLIST_PREPROCESS = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
