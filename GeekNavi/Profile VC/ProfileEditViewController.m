@@ -1,6 +1,5 @@
 #import "ProfileEditViewController.h"
 #import "Constant.h"
-#import "Canvas.h"
 #import <GeekNavi/GeekPhotoLibrary.h>
 
 @interface ProfileEditViewController ()<GeekPhotoLibraryDelegate>{
@@ -21,7 +20,7 @@
     __weak IBOutlet UIImageView        *driverImg;
     __weak IBOutlet UIButton *bringupPaypalViewRef;
     
-    __weak IBOutlet CSAnimationView *menuView;
+    __weak IBOutlet UIView *menuView;
     
     __weak IBOutlet UIView *paypalview;
     
@@ -49,7 +48,7 @@
     
     [self themeOptimization];
     [self stateConfiguration];
-    [self fetchPreviousDetails];
+    [self performSelector:@selector(fetchPreviousDetails) withObject:nil afterDelay:0.01f];
 }
 
 #pragma mark - Submits the drivers Paypal Email
@@ -139,8 +138,6 @@
     
     [menuView setHidden:NO];
     
-    [menuView startCanvasAnimation];
-    
     [self.view bringSubviewToFront:menuView];
 }
 - (IBAction)closePayoutSettings:(id)sender {
@@ -157,7 +154,11 @@
     txtFirstName.text=userInformation[@"vFirst"];
     txtLastName.text=userInformation[@"vLast"];
     phonenumber.text=userInformation[@"userPhone"];
-    downloadImageFromUrl(userInformation[@"profileImage"][@"original"], profilePictureImageView);
+    NSData *data = [[NSData alloc] initWithContentsOfURL:[NSURL URLWithString:userInformation[@"profileImage"][@"original"]]];
+    if (data) {
+        UIImage *image = [UIImage imageWithData:data];
+        [profilePictureImageView setImage:image];
+    }
     profilePictureImageView.layer.cornerRadius = profilePictureImageView.frame.size.height/2;
 }
 -(void)themeOptimization{

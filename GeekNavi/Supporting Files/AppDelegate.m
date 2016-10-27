@@ -17,6 +17,7 @@
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
 #import <FBSDKLoginKit/FBSDKLoginKit.h>
 #import <GeekNavi/GeekGuillotineMenu.h>
+#import "AppConfiguration.h"
 
 @interface AppDelegate ()<GeekGuillotineMenuDelegate>
 
@@ -24,14 +25,31 @@
 
 @implementation AppDelegate
 
+-(instancetype)init{
+    if ( self = [super init] ) {
+        /*
+            Change any of these controllers to your own values if you'd like to customize the menu
+        */
+        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+        
+        SEMainViewController  *menuVC   = (SEMainViewController *)[storyboard instantiateViewControllerWithIdentifier:@"mainStoryboardID"];
+        SEPaymentViewController  *paymentVC   = (SEPaymentViewController *)[storyboard instantiateViewControllerWithIdentifier:@"paymentStoryboardID"];
+        SEBecomeADriver *applyToDriveVC   = (SEBecomeADriver *)[storyboard instantiateViewControllerWithIdentifier:@"becomeADriverStoryboardID"];
+        ProfileEditViewController *settingsVC   = (ProfileEditViewController *)[storyboard instantiateViewControllerWithIdentifier:@"profileStoryboardID"];
+        
+        self.vcArray        = @[menuVC, paymentVC, applyToDriveVC, settingsVC,LOGOUTBTN];
+    }
+    return self;
+}
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions{
     [UIApplication sharedApplication].idleTimerDisabled = YES;
     
-    [GeekNavi setGeekNaviAPIKey:@""]; // Your GeekNavi API Key
+    [GeekNavi setGeekNaviAPIKey:__GEEK_API_KEY]; // Your GeekNavi API Key
     
     [GeekNavi setThemeColor:[UIColor colorWithRed:22.0/255.0f green:156.0/255.0f blue:229.0/255.0 alpha:1.0f]];
     
-    [GeekNavi setStripePK_Key:@"pk_test_FuLAg7bUqPr0iKuQtS7W7xvB"]; // GeekNavi's Test Key, implement your own if you're not testing solely for demo purposes
+    [GeekNavi setStripePK_Key:__STRIPE_API_KEY]; // GeekNavi's Test Key, implement your own if you're not testing solely for demo purposes
     
     [GeekNavi setGroupIDIdentifier:@"group.sharingdata.ride"]; // Found under "Capabilities"
     
@@ -72,19 +90,9 @@
 
 -(void)initializeMainRootViewController{
     /*
-     GeekNavi Root Navigation Controller (Loaded once a user is successfully logged in)
-     
-     Change any of these controllers to your own values if you'd like to customize the menu
-     */
+     GeekNavi Root Navigation Controller (Loaded once a user is successfully logged in
+    */
     
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    
-    SEMainViewController  *menuVC   = [storyboard instantiateViewControllerWithIdentifier:@"mainStoryboardID"];
-    SEPaymentViewController  *paymentVC   = [storyboard instantiateViewControllerWithIdentifier:@"paymentStoryboardID"];
-    SEBecomeADriver *applyToDriveVC   = [storyboard instantiateViewControllerWithIdentifier:@"becomeADriverStoryboardID"];
-    ProfileEditViewController *settingsVC   = [storyboard instantiateViewControllerWithIdentifier:@"profileStoryboardID"];
-    
-    self.vcArray        = @[menuVC, paymentVC, applyToDriveVC, settingsVC,LOGOUTBTN];
     NSArray *titlesArray    = @[@"HOME", @"PAYMENT", @"DRIVE", @"SETTINGS",@"LOG OUT"];
     NSArray *imagesArray    = @[@"ic_home", @"ic_payment", @"ic_drive", @"ic_settings",@"ic_logout"];
     
@@ -97,7 +105,6 @@
     [[UIApplication sharedApplication].keyWindow setRootViewController:navController];
 }
 -(void)didTapLogoutButton{
-    
     [[NSUserDefaults standardUserDefaults] removePersistentDomainForName:[[NSBundle mainBundle] bundleIdentifier]];
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     LoginViewController *loginVC = [storyboard instantiateViewControllerWithIdentifier:@"loginViewControllerID"];
@@ -109,6 +116,7 @@
     [loginManager logOut];
     
     [FBSDKAccessToken setCurrentAccessToken:nil];
+    [GeekNavi removeGeekToken];
 }
 
 - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
@@ -139,8 +147,7 @@
 - (void)applicationWillEnterForeground:(UIApplication *)application{
     // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
 }
-- (void)applicationDidBecomeActive:(UIApplication *)application
-{
+- (void)applicationDidBecomeActive:(UIApplication *)application{
     application.applicationIconBadgeNumber = 0;
     [FBSDKAppEvents activateApp];
 }

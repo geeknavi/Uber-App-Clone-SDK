@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="o45-Q4-lK7">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="o45-Q4-lK7">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -18,7 +18,7 @@
                         <viewControllerLayoutGuide type="bottom" id="Luo-Zb-Jfm"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="zbc-Rd-pkc">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3FR-Jl-4ZH" customClass="CSAnimationView">
@@ -123,7 +123,7 @@
                         <viewControllerLayoutGuide type="bottom" id="qXN-Fl-e3M"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Bn4-40-uxY">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GoA-sk-7uq">
@@ -276,7 +276,7 @@
                         <viewControllerLayoutGuide type="bottom" id="2RO-uP-lgx"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Luv-aT-T3w">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Verification code" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ubJ-7l-x2w">
@@ -419,7 +419,7 @@
                         <viewControllerLayoutGuide type="bottom" id="oPM-pO-oKs"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="NDE-TA-LTx">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nMM-lw-BmR">
@@ -520,7 +520,7 @@
                         <viewControllerLayoutGuide type="bottom" id="qKu-I0-Gzw"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="BMk-qY-2tA">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ZIP Code" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hIt-my-qNW">
@@ -770,7 +770,7 @@ d. Federal Credit Unions d. National Credit Union Administration Office of Consu
                         <viewControllerLayoutGuide type="bottom" id="b9L-qm-ZgZ"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="OLd-19-b2w">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EYx-PV-Z2W">
@@ -1070,7 +1070,7 @@ d. Federal Credit Unions d. National Credit Union Administration Office of Consu
                         <viewControllerLayoutGuide type="bottom" id="zg1-V0-P1U"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="baQ-tp-pYF">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ARU-Ea-adj">
@@ -1371,7 +1371,7 @@ d. Federal Credit Unions d. National Credit Union Administration Office of Consu
                         <viewControllerLayoutGuide type="bottom" id="2ZT-Oc-Ohd"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="9jH-EY-jRv">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="X74-g1-Fca">
@@ -1446,7 +1446,7 @@ d. Federal Credit Unions d. National Credit Union Administration Office of Consu
                         <constraints>
                             <constraint firstItem="X74-g1-Fca" firstAttribute="centerX" secondItem="9jH-EY-jRv" secondAttribute="centerX" id="2Px-9Q-DER"/>
                             <constraint firstItem="X74-g1-Fca" firstAttribute="centerY" secondItem="9jH-EY-jRv" secondAttribute="centerY" id="7sc-rx-Dde"/>
-                            <constraint firstItem="X74-g1-Fca" firstAttribute="width" secondItem="9jH-EY-jRv" secondAttribute="width" id="Cqr-fx-SvT"/>
+                            <constraint firstItem="X74-g1-Fca" firstAttribute="width" secondItem="9jH-EY-jRv" secondAttribute="width" id="DSQ-GS-Olm"/>
                             <constraint firstItem="A1R-Ff-YSj" firstAttribute="centerX" secondItem="9jH-EY-jRv" secondAttribute="centerXWithinMargins" id="FCK-iC-UnB"/>
                             <constraint firstItem="A1R-Ff-YSj" firstAttribute="width" secondItem="9jH-EY-jRv" secondAttribute="width" constant="-20" id="Ooq-sA-HrZ"/>
                             <constraint firstItem="yjh-Em-rEh" firstAttribute="centerX" secondItem="9jH-EY-jRv" secondAttribute="centerXWithinMargins" id="QQM-1P-gx6"/>
@@ -1455,7 +1455,7 @@ d. Federal Credit Unions d. National Credit Union Administration Office of Consu
                             <constraint firstAttribute="bottomMargin" secondItem="yjh-Em-rEh" secondAttribute="bottom" constant="13" id="cxw-dK-uPU"/>
                             <constraint firstItem="yjh-Em-rEh" firstAttribute="top" secondItem="t14-e3-GBX" secondAttribute="bottom" constant="69" id="gcL-1q-get"/>
                             <constraint firstAttribute="trailingMargin" secondItem="t14-e3-GBX" secondAttribute="trailing" constant="-9" id="nZV-2n-w6c"/>
-                            <constraint firstItem="X74-g1-Fca" firstAttribute="height" secondItem="9jH-EY-jRv" secondAttribute="height" id="wKA-1c-dGk"/>
+                            <constraint firstItem="X74-g1-Fca" firstAttribute="height" secondItem="9jH-EY-jRv" secondAttribute="height" id="s12-5H-4aD"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="I5U-sh-obN"/>
@@ -1485,7 +1485,7 @@ d. Federal Credit Unions d. National Credit Union Administration Office of Consu
                         <viewControllerLayoutGuide type="bottom" id="HRl-oO-VlX"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="rmp-fA-cr0">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3wm-rA-gPc">
@@ -1565,7 +1565,7 @@ d. Federal Credit Unions d. National Credit Union Administration Office of Consu
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D5W-EE-rs6" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="aj1-Bm-Oec" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2971" y="1237"/>
+            <point key="canvasLocation" x="2970" y="1242"/>
         </scene>
         <!--Receipt-->
         <scene sceneID="oiN-xJ-Hxm">
@@ -1576,7 +1576,7 @@ d. Federal Credit Unions d. National Credit Union Administration Office of Consu
                         <viewControllerLayoutGuide type="bottom" id="gea-7b-TUf"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="PdB-wX-oO0">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Receipt " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CR0-AT-9ka">
@@ -1759,7 +1759,7 @@ d. Federal Credit Unions d. National Credit Union Administration Office of Consu
                         <viewControllerLayoutGuide type="bottom" id="4pJ-he-22h"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="GOE-Rb-hIF">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Payment method" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6H6-kf-kQs">
@@ -1835,7 +1835,7 @@ d. Federal Credit Unions d. National Credit Union Administration Office of Consu
                         <viewControllerLayoutGuide type="bottom" id="eWC-63-BVS"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="JNn-w0-v34">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SUt-eB-JDZ">
@@ -1885,7 +1885,7 @@ d. Federal Credit Unions d. National Credit Union Administration Office of Consu
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Pet" placeholder="First Name" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="le7-2R-Wgk">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Loading.." placeholder="First Name" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="le7-2R-Wgk">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="vcG-85-Bma"/>
                                 </constraints>
@@ -1901,7 +1901,7 @@ d. Federal Credit Unions d. National Credit Union Administration Office of Consu
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Smith" placeholder="Last Name" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="n0g-Kg-ZlH">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Loading.." placeholder="Last Name" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="n0g-Kg-ZlH">
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -1919,7 +1919,7 @@ d. Federal Credit Unions d. National Credit Union Administration Office of Consu
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Phonenumber" placeholder="Phonenumber" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="aLg-jy-ass">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Loading.." placeholder="Phonenumber" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="aLg-jy-ass">
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences" keyboardType="numberPad"/>
@@ -1944,12 +1944,12 @@ d. Federal Credit Unions d. National Credit Union Administration Office of Consu
                                     <action selector="payoutSettingsBtn:" destination="HpM-Lo-NDz" eventType="touchUpInside" id="tDa-mB-7LQ"/>
                                 </connections>
                             </button>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Referral code:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ifz-ap-JRd">
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ifz-ap-JRd">
                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h4z-QP-gru" customClass="CSAnimationView">
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h4z-QP-gru">
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CURRENT EARNINGS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qqb-Ah-UpI">
                                         <constraints>
@@ -2012,7 +2012,7 @@ d. Federal Credit Unions d. National Credit Union Administration Office of Consu
                                             <action selector="closePayoutSettings:" destination="HpM-Lo-NDz" eventType="touchUpInside" id="qBL-dk-BWy"/>
                                         </connections>
                                     </button>
-                                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yer-v9-kwq" customClass="CSAnimationView">
+                                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yer-v9-kwq">
                                         <subviews>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Paypal E-Mail Address" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9C2-RA-aaK">
                                                 <constraints>
@@ -2050,15 +2050,6 @@ d. Federal Credit Unions d. National Credit Union Administration Office of Consu
                                             <constraint firstItem="BXm-8s-ny4" firstAttribute="width" secondItem="yer-v9-kwq" secondAttribute="width" id="h1q-0b-jm1"/>
                                             <constraint firstItem="BXm-8s-ny4" firstAttribute="centerX" secondItem="yer-v9-kwq" secondAttribute="centerX" id="wYF-gr-OZ4"/>
                                         </constraints>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="string" keyPath="type" value="slideUp"/>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="duration">
-                                                <real key="value" value="0.40000000000000002"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="delay">
-                                                <integer key="value" value="0"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" red="0.086274509799999996" green="0.61176470589999998" blue="0.8980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -2083,15 +2074,6 @@ d. Federal Credit Unions d. National Credit Union Administration Office of Consu
                                     <constraint firstItem="U5z-AG-Xfa" firstAttribute="centerY" secondItem="Lqz-yU-gqp" secondAttribute="centerY" id="xoY-g9-aIC"/>
                                     <constraint firstAttribute="bottom" secondItem="yer-v9-kwq" secondAttribute="bottom" constant="1" id="zGH-Vu-klh"/>
                                 </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="type" value="slideUp"/>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="duration">
-                                        <real key="value" value="0.40000000000000002"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="delay">
-                                        <integer key="value" value="0"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="0.086274509799999996" green="0.61176470589999998" blue="0.8980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -2177,7 +2159,7 @@ d. Federal Credit Unions d. National Credit Union Administration Office of Consu
                         <viewControllerLayoutGuide type="bottom" id="5vI-wY-SD7"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Bik-xv-SQ5">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="48z-c9-j9J">
@@ -2335,7 +2317,7 @@ d. Federal Credit Unions d. National Credit Union Administration Office of Consu
                         <viewControllerLayoutGuide type="bottom" id="AWd-VE-wAl"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="oHS-Jx-7Yw">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add phone number" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BCN-O6-CrV">
@@ -2488,7 +2470,7 @@ d. Federal Credit Unions d. National Credit Union Administration Office of Consu
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wDD-yz-h2H" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1109" y="242"/>
+            <point key="canvasLocation" x="1108" y="242"/>
         </scene>
         <!--Terms and Conditions-->
         <scene sceneID="QQP-N8-bVU">
@@ -2499,7 +2481,7 @@ d. Federal Credit Unions d. National Credit Union Administration Office of Consu
                         <viewControllerLayoutGuide type="bottom" id="2ZX-7z-BR4"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="sHh-xf-CsB">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zUA-lL-bLe">
@@ -2836,7 +2818,7 @@ You may not assign these Terms without GeekNavi's prior written approval. GeekNa
                         <viewControllerLayoutGuide type="bottom" id="P7A-Tm-Tjl"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="tOx-ff-EO9">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lxg-lE-Fqk">
@@ -2996,10 +2978,10 @@ You may not assign these Terms without GeekNavi's prior written approval. GeekNa
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+        <simulatedScreenMetrics key="destination" type="retina4_0.fullscreen"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="RWC-UX-xFY"/>
-        <segue reference="CgM-LY-FBy"/>
+        <segue reference="gJZ-Fv-sw5"/>
+        <segue reference="b2d-fp-Uyl"/>
     </inferredMetricsTieBreakers>
 </document>

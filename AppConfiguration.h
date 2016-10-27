@@ -11,7 +11,7 @@
 #define __kBasePath @""
 
 // 2. Set your Stripe PK Key (Found under: https://dashboard.stripe.com/account/apikeys)
-#define __STRIPE_API_KEY @""
+#define __STRIPE_API_KEY @"pk_test_FuLAg7bUqPr0iKuQtS7W7xvB"
 
 // 3. Set your Google Maps Geocoding API Key (Optional)
 #define __GOOGLE_API_KEY @""

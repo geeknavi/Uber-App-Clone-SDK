@@ -184,8 +184,13 @@ typedef void(^GeekNaviWebResultsBlock)(id JSON,WebServiceResult geekResult);
 
 /*
  A Boolean that return YES if the user has previously logged in & the credentials are stored
- */
+*/
 +(BOOL)geekHasAccessToken;
+
+/*
+ Removes the GeekNavi token (call this when user wants to log out)
+*/
++(void)removeGeekToken;
 
 /*
  Logs in user with Facebook and returns a Web Result Block

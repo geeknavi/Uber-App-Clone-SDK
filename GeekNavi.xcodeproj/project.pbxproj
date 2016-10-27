@@ -164,10 +164,10 @@
 		03AA6B5F1D48681D00DD78D4 /* close-btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 03AA6B251D48681D00DD78D4 /* close-btn.png */; };
 		03BF50971D8FB16A00106C05 /* AppIntentVocabulary.plist in Resources */ = {isa = PBXBuildFile; fileRef = 03BF50991D8FB16A00106C05 /* AppIntentVocabulary.plist */; };
 		03E5F3F31D8E7E610024E8E8 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03AA69C71D48667A00DD78D4 /* Bolts.framework */; };
-		03E5F3F71D8E7FD00024E8E8 /* GeekNavi.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 03E5F3F41D8E7FA60024E8E8 /* GeekNavi.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		03E5F3FC1D8E82420024E8E8 /* GeekNavi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03E5F3FB1D8E82420024E8E8 /* GeekNavi.framework */; };
 		03EEA2B41D8E2F49001B6013 /* IntentHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 03EEA2B31D8E2F49001B6013 /* IntentHandler.m */; };
 		03EEA2CA1D8E2F4A001B6013 /* siriGeek.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 03EEA2B01D8E2F49001B6013 /* siriGeek.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		03F373921DA9EB85008CB2BA /* GeekNavi.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 03E5F3FB1D8E82420024E8E8 /* GeekNavi.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		03F8D2FD1D48740E003DE4FC /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 03F8D2FC1D48740E003DE4FC /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
@@ -182,17 +182,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		03E5F3F81D8E7FD00024E8E8 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				03E5F3F71D8E7FD00024E8E8 /* GeekNavi.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		03EEA2D11D8E2F4A001B6013 /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -202,6 +191,17 @@
 				03EEA2CA1D8E2F4A001B6013 /* siriGeek.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03F373931DA9EB85008CB2BA /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				03F373921DA9EB85008CB2BA /* GeekNavi.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -434,10 +434,9 @@
 		03AA6B251D48681D00DD78D4 /* close-btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "close-btn.png"; sourceTree = "<group>"; };
 		03AA6B601D48689000DD78D4 /* GeekNavi-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GeekNavi-Info.plist"; sourceTree = "<group>"; };
 		03AA6B621D48691D00DD78D4 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		03AA6B661D486A2700DD78D4 /* pre-plist-setup.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "pre-plist-setup.xcconfig"; sourceTree = "<group>"; };
+		03AA6B661D486A2700DD78D4 /* pre-plist-setup.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "pre-plist-setup.xcconfig"; path = "GeekNavi/pre-plist-setup.xcconfig"; sourceTree = "<group>"; };
 		03BF508E1D8EB29A00106C05 /* siriGeek.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = siriGeek.entitlements; sourceTree = "<group>"; };
 		03BF509A1D8FB17300106C05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Base; path = Base.lproj/AppIntentVocabulary.plist; sourceTree = "<group>"; };
-		03E5F3F41D8E7FA60024E8E8 /* GeekNavi.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GeekNavi.framework; path = "/Users/filipbusic/Desktop/GeekNavi 2.0/iOS/GeekNavi/GeekNavi.framework"; sourceTree = "<absolute>"; };
 		03E5F3FB1D8E82420024E8E8 /* GeekNavi.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GeekNavi.framework; sourceTree = "<group>"; };
 		03EEA2AB1D8E2CC5001B6013 /* GeekNavi.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GeekNavi.entitlements; sourceTree = "<group>"; };
 		03EEA2B01D8E2F49001B6013 /* siriGeek.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = siriGeek.appex; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -445,7 +444,7 @@
 		03EEA2B31D8E2F49001B6013 /* IntentHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IntentHandler.m; sourceTree = "<group>"; };
 		03EEA2B51D8E2F49001B6013 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		03EEA2BB1D8E2F49001B6013 /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
-		03F3738E1DA9E466008CB2BA /* AppConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppConfiguration.h; sourceTree = "<group>"; };
+		03F373941DA9EBE8008CB2BA /* AppConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppConfiguration.h; sourceTree = "<group>"; };
 		03F8D2FC1D48740E003DE4FC /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -479,7 +478,7 @@
 			isa = PBXGroup;
 			children = (
 				03AA6B661D486A2700DD78D4 /* pre-plist-setup.xcconfig */,
-				03F3738E1DA9E466008CB2BA /* AppConfiguration.h */,
+				03F373941DA9EBE8008CB2BA /* AppConfiguration.h */,
 				03AA69CD1D48668E00DD78D4 /* Frameworks */,
 				03EEA2B11D8E2F49001B6013 /* siriGeek */,
 				03AA69A81D4865D900DD78D4 /* GeekNavi */,
@@ -1003,7 +1002,7 @@
 				03AA69A31D4865D900DD78D4 /* Frameworks */,
 				03AA69A41D4865D900DD78D4 /* Resources */,
 				03EEA2D11D8E2F4A001B6013 /* Embed App Extensions */,
-				03E5F3F81D8E7FD00024E8E8 /* Embed Frameworks */,
+				03F373931DA9EB85008CB2BA /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1354,7 +1353,6 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -1397,7 +1395,6 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
@@ -1411,7 +1408,7 @@
 			baseConfigurationReference = 03AA6B661D486A2700DD78D4 /* pre-plist-setup.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = GeekNavi.entitlements;
+				CODE_SIGN_ENTITLEMENTS = GeekNavi/GeekNavi.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1420,7 +1417,7 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GeekNavi/Supporting Files/PrefixHeader.pch";
-				INFOPLIST_FILE = "$(SRCROOT)/Supporting Files/GeekNavi-Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/GeekNavi/Supporting Files/GeekNavi-Info.plist";
 				INFOPLIST_PREPROCESS = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1439,7 +1436,7 @@
 			baseConfigurationReference = 03AA6B661D486A2700DD78D4 /* pre-plist-setup.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = GeekNavi.entitlements;
+				CODE_SIGN_ENTITLEMENTS = GeekNavi/GeekNavi.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1448,7 +1445,7 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GeekNavi/Supporting Files/PrefixHeader.pch";
-				INFOPLIST_FILE = "$(SRCROOT)/Supporting Files/GeekNavi-Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/GeekNavi/Supporting Files/GeekNavi-Info.plist";
 				INFOPLIST_PREPROCESS = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
