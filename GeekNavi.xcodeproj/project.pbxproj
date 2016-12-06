@@ -377,8 +377,8 @@
 		03BC08761DE94CC300285623 /* PayoutSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PayoutSettingsViewController.m; path = "Payout Settings VC/PayoutSettingsViewController.m"; sourceTree = "<group>"; };
 		03BF508E1D8EB29A00106C05 /* siriGeek.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = siriGeek.entitlements; sourceTree = "<group>"; };
 		03BF509A1D8FB17300106C05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Base; path = Base.lproj/AppIntentVocabulary.plist; sourceTree = "<group>"; };
-		03E3CD8C1DEC352A00E441C8 /* ApplyToDriveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ApplyToDriveViewController.h; path = ../ApplyToDriveViewController.h; sourceTree = "<group>"; };
-		03E3CD8D1DEC352A00E441C8 /* ApplyToDriveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ApplyToDriveViewController.m; path = ../ApplyToDriveViewController.m; sourceTree = "<group>"; };
+		03E3CD8C1DEC352A00E441C8 /* ApplyToDriveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApplyToDriveViewController.h; sourceTree = "<group>"; };
+		03E3CD8D1DEC352A00E441C8 /* ApplyToDriveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApplyToDriveViewController.m; sourceTree = "<group>"; };
 		03E5F3FB1D8E82420024E8E8 /* GeekNavi.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GeekNavi.framework; sourceTree = "<group>"; };
 		03ECCAA41DF26B19004D5899 /* GoogleMapsBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMapsBase.framework; sourceTree = "<group>"; };
 		03ECCAA61DF26B21004D5899 /* GoogleMapsM4B.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMapsM4B.framework; sourceTree = "<group>"; };
