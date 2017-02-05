@@ -1,0 +1,6 @@
+framework module GeekNavi {
+  umbrella header "GeekNavi.h"
+
+  export *
+  module * { export * }
+}
