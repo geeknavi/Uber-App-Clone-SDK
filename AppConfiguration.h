@@ -8,7 +8,7 @@
 #define __kBasePath @"http://www.example.com/ws/"
 
 // 2. Set your Stripe Key (Found under: https://dashboard.stripe.com/account/apikeys)
-#define __STRIPE_API_KEY @"pk_test_FuLAg7bUqPr0iKuQtS7W7xvB"
+#define __STRIPE_API_KEY @"pk_test_HP7Nh6uHBBdWonyAkspg4vI8"
 
 // 3. Set your Google iOS Places API Key (Grab a free API key here: https://console.developers.google.com/flows/enableapi?apiid=placesios&reusekey=true)
 #define __GOOGLE_API_KEY @"AIzaSyAsCIRfUG7yVDMOBSCUMUgwboj9I345xtQ"
@@ -23,4 +23,4 @@
 #define __INVITE_TEXT @"I.. Love... GeekNavi!"
 
 // 7. Set your GeekNavi API Key: (Don't have one? Request one by contacting us at support@geeknavi.com)
-#define __GEEK_API_KEY @""
+#define __GEEK_API_KEY @"7CV2NQJ8NCKY5IQ39FOX47GOV"

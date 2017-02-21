@@ -9,7 +9,7 @@
 #import "ApplyToDriveViewController.h"
 #import "REFormattedNumberField.h"
 #import <GeekNavi/GeekDrawCamera.h>
-#import <GeekNavi/GeekApplicant.h>
+#import "GeekApplicant.h"
 #import <GeekNavi/GeekPhotoLibrary.h>
 
 #define MAX_STEPS 11

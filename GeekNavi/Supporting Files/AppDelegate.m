@@ -54,7 +54,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions{
     [UIApplication sharedApplication].idleTimerDisabled = YES;
-    
+  
     [GeekNavi setGeekNaviAPIKey:__GEEK_API_KEY]; // Your GeekNavi API Key
     
     // Set main & sub color
@@ -68,9 +68,10 @@
      Required after purchase
      
     [GeekNavi setBackendPath:__kBasePath];
-    [GeekNavi setStripePK_Key:__STRIPE_API_KEY];
     */
-    
+  
+  [GeekNavi setStripePK_Key:__STRIPE_API_KEY];
+  
     /*
      Set your invitation text (Optional)
      */

@@ -156,7 +156,7 @@
     if ([needInfoString isEqualToString:@"insurance"]) {
         [self uploadImageToDatabase:INSURANCEPICTURE];
     }else if([needInfoString isEqualToString:@"registration"]){
-        [self uploadImageToDatabase:REGISTRATIONPIC];
+        [self uploadImageToDatabase:REGPICTURE];
     }else if([needInfoString isEqualToString:@"carpicture"]){
         [self uploadImageToDatabase:CARPICTURE];
     }else if([needInfoString isEqualToString:@"picture"]){

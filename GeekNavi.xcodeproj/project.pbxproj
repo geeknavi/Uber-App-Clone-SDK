@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		03178F821DED72DE00F1ECD1 /* NSString+RENumberFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 03178F7F1DED72DE00F1ECD1 /* NSString+RENumberFormat.m */; };
 		03178F831DED72DE00F1ECD1 /* REFormattedNumberField.m in Sources */ = {isa = PBXBuildFile; fileRef = 03178F811DED72DE00F1ECD1 /* REFormattedNumberField.m */; };
+		031970F71E5BC32C0065C5CF /* GeekApplicant.m in Sources */ = {isa = PBXBuildFile; fileRef = 031970F51E5BC32C0065C5CF /* GeekApplicant.m */; };
 		034C3D5A1D8FC270009B8BC6 /* AppIntentVocabulary.plist in Resources */ = {isa = PBXBuildFile; fileRef = 03BF50991D8FB16A00106C05 /* AppIntentVocabulary.plist */; };
 		035B87051DA4D07A00636154 /* PassKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 035B87041DA4D07A00636154 /* PassKit.framework */; };
 		035B87071DA4D0AC00636154 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 035B87061DA4D0AC00636154 /* libz.tbd */; };
@@ -193,6 +194,8 @@
 		03178F7F1DED72DE00F1ECD1 /* NSString+RENumberFormat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+RENumberFormat.m"; sourceTree = "<group>"; };
 		03178F801DED72DE00F1ECD1 /* REFormattedNumberField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REFormattedNumberField.h; sourceTree = "<group>"; };
 		03178F811DED72DE00F1ECD1 /* REFormattedNumberField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REFormattedNumberField.m; sourceTree = "<group>"; };
+		031970F51E5BC32C0065C5CF /* GeekApplicant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeekApplicant.m; sourceTree = "<group>"; };
+		031970F61E5BC32C0065C5CF /* GeekApplicant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeekApplicant.h; sourceTree = "<group>"; };
 		035B87041DA4D07A00636154 /* PassKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PassKit.framework; path = System/Library/Frameworks/PassKit.framework; sourceTree = SDKROOT; };
 		035B87061DA4D0AC00636154 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		035B87081DA4D0B400636154 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
@@ -898,6 +901,8 @@
 		03AA6AA61D4867DF00DD78D4 /* Apply To Drive VC */ = {
 			isa = PBXGroup;
 			children = (
+				031970F51E5BC32C0065C5CF /* GeekApplicant.m */,
+				031970F61E5BC32C0065C5CF /* GeekApplicant.h */,
 				03E3CD8C1DEC352A00E441C8 /* ApplyToDriveViewController.h */,
 				03E3CD8D1DEC352A00E441C8 /* ApplyToDriveViewController.m */,
 				03AA6AA41D4867DF00DD78D4 /* SEBecomeADriver.h */,
@@ -1240,6 +1245,7 @@
 				03AA6A1A1D4867C100DD78D4 /* UITextField+Localized.m in Sources */,
 				03AA6AB51D4867DF00DD78D4 /* PTKCard.m in Sources */,
 				03AA6ADE1D4867DF00DD78D4 /* STPAPIConnection.m in Sources */,
+				031970F71E5BC32C0065C5CF /* GeekApplicant.m in Sources */,
 				03AA6AE41D4867DF00DD78D4 /* ProfileEditViewController.m in Sources */,
 				03AA6AD51D4867DF00DD78D4 /* STPCheckoutInternalUIWebViewController.m in Sources */,
 				03AA6AAF1D4867DF00DD78D4 /* DriverRideCompleteViewController.m in Sources */,

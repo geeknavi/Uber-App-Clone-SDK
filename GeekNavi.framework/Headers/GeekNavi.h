@@ -12,7 +12,7 @@
 
 #define INSURANCEPICTURE @"Ins"
 #define CARPICTURE @"Car"
-#define REGISTRATIONPIC @"Reg"
+#define REGPICTURE @"Reg"
 
 /*
  GeekNavi Main Theme Color
