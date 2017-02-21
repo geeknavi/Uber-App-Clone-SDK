@@ -23,4 +23,4 @@
 #define __INVITE_TEXT @"I.. Love... GeekNavi!"
 
 // 7. Set your GeekNavi API Key: (Don't have one? Request one by contacting us at support@geeknavi.com)
-#define __GEEK_API_KEY @"7CV2NQJ8NCKY5IQ39FOX47GOV"
+#define __GEEK_API_KEY @""
